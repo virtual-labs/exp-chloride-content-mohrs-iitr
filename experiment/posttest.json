@@ -1,39 +1,102 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "What is the role of dilute nitric acid in the experiment, and how does it contribute to the accuracy of results?",
+    "answers": {
+      "a": "Enhances color changes",
+      "b": "Prevents interference from other ions",
+      "c": "Accelerates the titration process",
+      "d": "Neutralizes the sample"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Describe the visual indication of the endpoint in Mohr’s method. How does it aid in determining the completion of the titration?",
+    "answers": {
+      "a": "Color change to green",
+      "b": "Formation of a red-brown precipitate",
+      "c": "When the solution becomes colorless",
+      "d": "No visual indication"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Explain the potential sources of error in the titration process and suggest measures to overcome them?",
+    "answers": {
+      "a": "Over-titration",
+      "b": "Endpoint ambiguity",
+      "c": "Precipitate formation issues",
+      "d": "All of the above"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "In what scenarios might Mohr’s method not be the most suitable for chloride determination, and what alternative methods could be considered?",
+    "answers": {
+      "a": "High chloride concentrations",
+      "b": "Low sensitivity",
+      "c": "Interference from other ions",
+      "d": "All of the above"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "How does the presence of sodium chloride in diets contribute to the higher chloride concentration in wastewater?",
+    "answers": {
+      "a": "Enhances water color",
+      "b": "Passes unchanged through the digestive system",
+      "c": "Accelerates the titration process",
+      "d": "Creates a colorless solution"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Explain the role of potassium chromate as an indicator in Mohr’s method?",
+    "answers": {
+      "a": "Enhances color changes",
+      "b": "Neutralizes the sample",
+      "c": "Precipitates chloride ions",
+      "d": "Indicates the endpoint"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "Discuss the potential harm that chloride concentrations can cause to metallic pipes and structures?",
+    "answers": {
+      "a": "Enhances structural integrity",
+      "b": "Accelerates aging",
+      "c": "Causes corrosion",
+      "d": "Improves conductivity"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "How does chloride content affect the corrosion of metallic pipes, and what preventive measures can be taken?",
+    "answers": {
+      "a": "Increases corrosion, use corrosion-resistant materials",
+      "b": "Decreases corrosion, increase chloride concentration",
+      "c": "No impact on corrosion",
+      "d": "Install pipes without any preventive measures"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "What is the typical taste perception in waters containing 250 mg/L Cl- if sodium cation is present?",
+    "answers": {
+      "a": "Detectable salty taste",
+      "b": "Bitter taste",
+      "c": "No taste",
+      "d": "Sweet taste"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Discuss the potential environmental impacts of elevated chloride concentrations along the sea coast and in industrial settings?",
+    "answers": {
+      "a": "Impact on aquatic life",
+      "b": "Improved water quality",
+      "c": "No environmental effects",
+      "d": "Decreased industrial production"
+    },
+    "correctAnswer": "a"
+  }
+]
