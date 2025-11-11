@@ -1,0 +1,165 @@
+
+/home/runner/work/exp-chloride-content-mohrs-iitr/exp-chloride-content-mohrs-iitr/experiment/simulation/js/3and4KMno4.js
+   59:7   warning  'noStroke' is not defined                 no-undef
+   60:7   warning  'fill' is not defined                     no-undef
+   61:7   warning  'ellipse' is not defined                  no-undef
+   69:10  warning  'preload' is defined but never used       no-unused-vars
+   71:18  warning  'loadImage' is not defined                no-undef
+   72:18  warning  'loadImage' is not defined                no-undef
+   73:18  warning  'loadImage' is not defined                no-undef
+   74:18  warning  'loadImage' is not defined                no-undef
+   75:18  warning  'loadImage' is not defined                no-undef
+   76:18  warning  'loadImage' is not defined                no-undef
+   77:18  warning  'loadImage' is not defined                no-undef
+   81:10  warning  'createImg' is not defined                no-undef
+   82:10  warning  'createImg' is not defined                no-undef
+   83:10  warning  'createImg' is not defined                no-undef
+   84:10  warning  'createImg' is not defined                no-undef
+   95:10  warning  'setup' is defined but never used         no-unused-vars
+   96:12  warning  'createCanvas' is not defined             no-undef
+  102:14  warning  'createVector' is not defined             no-undef
+  107:15  warning  'createVector' is not defined             no-undef
+  117:10  warning  'draw' is defined but never used          no-unused-vars
+  127:3   warning  'background' is not defined               no-undef
+  133:3   warning  'push' is not defined                     no-undef
+  134:18  warning  'tint' is not defined                     no-undef
+  135:3   warning  'image' is not defined                    no-undef
+  136:3   warning  'pop' is not defined                      no-undef
+  138:3   warning  'image' is not defined                    no-undef
+  141:20  warning  'millis' is not defined                   no-undef
+  142:5   warning  'image' is not defined                    no-undef
+  147:5   warning  'noStroke' is not defined                 no-undef
+  148:5   warning  'fill' is not defined                     no-undef
+  149:5   warning  'rect' is not defined                     no-undef
+  182:5   warning  'image' is not defined                    no-undef
+  186:3   warning  'image' is not defined                    no-undef
+  199:5   warning  'image' is not defined                    no-undef
+  215:5   warning  'image' is not defined                    no-undef
+  217:5   warning  'image' is not defined                    no-undef
+  231:10  warning  'mousePressed' is defined but never used  no-unused-vars
+  233:7   warning  'mouseX' is not defined                   no-undef
+  233:28  warning  'mouseX' is not defined                   no-undef
+  234:7   warning  'mouseY' is not defined                   no-undef
+  234:28  warning  'mouseY' is not defined                   no-undef
+  239:7   warning  'mouseX' is not defined                   no-undef
+  239:29  warning  'mouseX' is not defined                   no-undef
+  240:7   warning  'mouseY' is not defined                   no-undef
+  240:29  warning  'mouseY' is not defined                   no-undef
+  245:7   warning  'mouseX' is not defined                   no-undef
+  245:25  warning  'mouseX' is not defined                   no-undef
+  246:7   warning  'mouseY' is not defined                   no-undef
+  246:25  warning  'mouseY' is not defined                   no-undef
+  259:13  warning  'createVector' is not defined             no-undef
+  260:13  warning  'createVector' is not defined             no-undef
+  273:16  warning  'createVector' is not defined             no-undef
+  274:16  warning  'createVector' is not defined             no-undef
+  283:16  warning  'createVector' is not defined             no-undef
+  284:16  warning  'createVector' is not defined             no-undef
+
+/home/runner/work/exp-chloride-content-mohrs-iitr/exp-chloride-content-mohrs-iitr/experiment/simulation/js/Mainfile.js
+    7:5   warning  'equivalencePointVolume' is defined but never used      no-unused-vars
+    8:5   warning  'titrationFinished' is assigned a value but never used  no-unused-vars
+   28:5   warning  'croppedImg' is defined but never used                  no-unused-vars
+   29:5   warning  'gifImage' is defined but never used                    no-unused-vars
+   42:5   warning  'ex2one' is assigned a value but never used             no-unused-vars
+   43:5   warning  'exone' is assigned a value but never used              no-unused-vars
+   48:5   warning  'onerun' is assigned a value but never used             no-unused-vars
+   53:5   warning  'waterlevel' is assigned a value but never used         no-unused-vars
+   54:5   warning  'showppt' is assigned a value but never used            no-unused-vars
+   62:5   warning  'ppt' is assigned a value but never used                no-unused-vars
+   65:5   warning  'blinking' is assigned a value but never used           no-unused-vars
+   74:10  warning  'preload' is defined but never used                     no-unused-vars
+   75:15  warning  'loadImage' is not defined                              no-undef
+   76:16  warning  'loadImage' is not defined                              no-undef
+   77:14  warning  'loadImage' is not defined                              no-undef
+   78:15  warning  'loadImage' is not defined                              no-undef
+   80:3   warning  'nextimg' is not defined                                no-undef
+   80:13  warning  'loadImage' is not defined                              no-undef
+   81:21  warning  'loadImage' is not defined                              no-undef
+   94:10  warning  'setup' is defined but never used                       no-unused-vars
+   99:15  warning  'select' is not defined                                 no-undef
+  102:7   warning  'windowWidth' is not defined                            no-undef
+  112:12  warning  'createCanvas' is not defined                           no-undef
+  119:3   warning  'background' is not defined                             no-undef
+  121:13  warning  'select' is not defined                                 no-undef
+  122:13  warning  'select' is not defined                                 no-undef
+  123:13  warning  'select' is not defined                                 no-undef
+  133:24  warning  'color' is not defined                                  no-undef
+  137:12  warning  'width' is not defined                                  no-undef
+  138:12  warning  'height' is not defined                                 no-undef
+  145:16  warning  'color' is not defined                                  no-undef
+  146:17  warning  'color' is not defined                                  no-undef
+  164:17  warning  'color' is not defined                                  no-undef
+  176:3   warning  'frameRate' is not defined                              no-undef
+  179:10  warning  'draw' is defined but never used                        no-unused-vars
+  184:3   warning  'background' is not defined                             no-undef
+  188:5   warning  'noStroke' is not defined                               no-undef
+  189:5   warning  'fill' is not defined                                   no-undef
+  190:5   warning  'rect' is not defined                                   no-undef
+  190:10  warning  'width' is not defined                                  no-undef
+  190:68  warning  'random' is not defined                                 no-undef
+  190:85  warning  'random' is not defined                                 no-undef
+  211:3   warning  'noStroke' is not defined                               no-undef
+  212:3   warning  'fill' is not defined                                   no-undef
+  214:3   warning  'rect' is not defined                                   no-undef
+  214:8   warning  'width' is not defined                                  no-undef
+  215:3   warning  'push' is not defined                                   no-undef
+  217:3   warning  'image' is not defined                                  no-undef
+  217:20  warning  'width' is not defined                                  no-undef
+  218:3   warning  'noStroke' is not defined                               no-undef
+  219:3   warning  'pop' is not defined                                    no-undef
+  221:5   warning  'noStroke' is not defined                               no-undef
+  222:5   warning  'fill' is not defined                                   no-undef
+  234:5   warning  'image' is not defined                                  no-undef
+  235:5   warning  'image' is not defined                                  no-undef
+  238:5   warning  'push' is not defined                                   no-undef
+  239:5   warning  'tint' is not defined                                   no-undef
+  242:7   warning  'image' is not defined                                  no-undef
+  245:7   warning  'image' is not defined                                  no-undef
+  249:5   warning  'pop' is not defined                                    no-undef
+  265:35  warning  'floor' is not defined                                  no-undef
+  269:9   warning  'millis' is not defined                                 no-undef
+  271:7   warning  'image' is not defined                                  no-undef
+  271:13  warning  'nextimg' is not defined                                no-undef
+  276:10  warning  'mousePressed' is defined but never used                no-unused-vars
+  279:20  warning  'dist' is not defined                                   no-undef
+  279:25  warning  'mouseX' is not defined                                 no-undef
+  279:33  warning  'mouseY' is not defined                                 no-undef
+  285:19  warning  'dist' is not defined                                   no-undef
+  285:24  warning  'mouseX' is not defined                                 no-undef
+  285:32  warning  'mouseY' is not defined                                 no-undef
+  291:7   warning  'mouseX' is not defined                                 no-undef
+  291:35  warning  'mouseX' is not defined                                 no-undef
+  291:59  warning  'mouseY' is not defined                                 no-undef
+  291:87  warning  'mouseY' is not defined                                 no-undef
+  296:10  warning  'mouseReleased' is defined but never used               no-unused-vars
+  303:10  warning  'changeArrowStyleToPointer' is defined but never used   no-unused-vars
+  304:3   warning  'nextButton' is not defined                             no-undef
+  332:21  warning  'color' is not defined                                  no-undef
+  340:31  warning  'sin' is not defined                                    no-undef
+  341:3   warning  'push' is not defined                                   no-undef
+  342:3   warning  'translate' is not defined                              no-undef
+  342:13  warning  'width' is not defined                                  no-undef
+  343:3   warning  'rotate' is not defined                                 no-undef
+  343:10  warning  'radians' is not defined                                no-undef
+  345:21  warning  'width' is not defined                                  no-undef
+  348:3   warning  'image' is not defined                                  no-undef
+  350:3   warning  'push' is not defined                                   no-undef
+  351:3   warning  'tint' is not defined                                   no-undef
+  354:5   warning  'image' is not defined                                  no-undef
+  357:5   warning  'image' is not defined                                  no-undef
+  359:3   warning  'pop' is not defined                                    no-undef
+  361:3   warning  'image' is not defined                                  no-undef
+  362:3   warning  'pop' is not defined                                    no-undef
+  395:23  warning  'random' is not defined                                 no-undef
+  419:26  warning  'random' is not defined                                 no-undef
+  420:27  warning  'random' is not defined                                 no-undef
+  421:3   warning  'fill' is not defined                                   no-undef
+  422:3   warning  'noStroke' is not defined                               no-undef
+  423:33  warning  'random' is not defined                                 no-undef
+  427:28  warning  'random' is not defined                                 no-undef
+  428:29  warning  'random' is not defined                                 no-undef
+  430:5   warning  'ellipse' is not defined                                no-undef
+
+✖ 158 problems (0 errors, 158 warnings)
+
