@@ -72,13 +72,13 @@ let equivalenceReached = false;
 let slider1, slider2, slider3;
 
 function preload() {
-  bureteImg = loadImage('burette51.png', loaded);
-  flaskImgbk = loadImage('backflask.png', loaded);
-  flaskImg = loadImage('frontflask.png', loaded);
-  bottomImg = loadImage('water.png', loaded);
+  bureteImg = loadImage('images/burette51.png', loaded);
+  flaskImgbk = loadImage('images/backflask.png', loaded);
+  flaskImg = loadImage('images/frontflask.png', loaded);
+  bottomImg = loadImage('images/water.png', loaded);
   //   gifImage = createImg('bubbler1.gif', loaded);
-  nextimg = loadImage('Forward.png', loaded);
-  backgroundImage = loadImage('bg.png', loaded);
+  nextimg = loadImage('images/Forward.png', loaded);
+  backgroundImage = loadImage('images/bg.png', loaded);
   // anothercolorImg=loadImage('conical flask.png')
 }
 
@@ -438,7 +438,7 @@ function nextpressed() {
   const queryParams = `data1=${encodeURIComponent(volume_titrant)}&data2=${encodeURIComponent(volume_titrate)}&data3=${encodeURIComponent(normality_titrate)}&data4=${encodeURIComponent(normality_titrant)}`;
 
   // Using the Fetch API to send a GET request
-  fetch(`send.php?${queryParams}`, {
+  fetch(`php/send.php?${queryParams}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -457,7 +457,7 @@ function nextpressed() {
       // Check for a success message or any other condition
       if (data.message === 'Value received successfully (Page 2)') {
         // Redirect to the second page after processing
-        window.location.href = 'TitrationComp.php';
+        window.location.href = 'php/TitrationComp.php';
       } else {
         console.error('Unexpected server response:', data);
       }
