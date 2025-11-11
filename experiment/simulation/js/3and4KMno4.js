@@ -68,16 +68,16 @@ class Drop {
 // ===============================================
 function preload() {
   // Replace these with your actual image filenames
-  image1       = loadImage('PotassiumChromate.png');
-  capImg       = loadImage('Cap.png');
-  bgImg        = loadImage('bg3.png');
-  dropperImg   = loadImage('droper.png');
-  frontFlask   = loadImage('frontflask.png');
-  liquidImg    = loadImage('Halfwater.png');
-  nextBtnImg   = loadImage('Forward.png');
+  image1       = loadImage('images/PotasiumChromate.png');
+  capImg       = loadImage('images/Cap.png');
+  bgImg        = loadImage('images/bg3.png');
+  dropperImg   = loadImage('images/droper.png');
+  frontFlask   = loadImage('images/frontflask.png');
+  liquidImg    = loadImage('images/Halfwater.png');
+  nextBtnImg   = loadImage('images/Forward.png');
 
   // GIFs (use same gif for all instructions)
-  const gifURL = 'gif1.gif';
+  const gifURL = 'images/gif1.gif';
   gif1 = createImg(gifURL);
   gif2 = createImg(gifURL);
   gif3 = createImg(gifURL);
@@ -309,5 +309,6 @@ function showNext() {
 }
 
 function nextPressed() {
+  console.log('nxt');
   window.location.href = 'Mytitration.html';
 }
