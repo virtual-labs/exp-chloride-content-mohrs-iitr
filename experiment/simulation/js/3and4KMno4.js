@@ -1,3 +1,4 @@
+ 
 // ===============================================
 //  GLOBALS
 // ===============================================
@@ -9,6 +10,10 @@ let canvasX = 0, canvasY = 0;
 // Images
 let image1, capImg, bgImg, dropperImg, frontFlask, liquidImg, nextBtnImg;
 let gif1, gif2, gif3, gif4;
+
+// GIF display states
+let gif1Visible = false, gif2Visible = false, gif3Visible = false, gif4Visible = false;
+let gif1X = 610, gif1Y = 240, gif2X = 0, gif2Y = 0, gif3X = 0, gif3Y = 0, gif4X = 0, gif4Y = 0;
 
 // Animation states
 let process1 = 0;   // cap
@@ -76,17 +81,11 @@ function preload() {
   liquidImg    = loadImage('images/Halfwater.png');
   nextBtnImg   = loadImage('images/Forward.png');
 
-  // GIFs (use same gif for all instructions)
-  const gifURL = 'images/gif1.gif';
-  gif1 = createImg(gifURL);
-  gif2 = createImg(gifURL);
-  gif3 = createImg(gifURL);
-  gif4 = createImg(gifURL);
-
-  [gif1, gif2, gif3, gif4].forEach(g => {
-    g.size(80, 80);
-    g.hide();
-  });
+  // GIFs (use same gif for all instructions) - Load as images
+  gif1 = loadImage('images/gif1.gif');
+  gif2 = loadImage('images/gif1.gif');
+  gif3 = loadImage('images/gif1.gif');
+  gif4 = loadImage('images/gif1.gif');
 }
 
 // ===============================================
@@ -95,8 +94,6 @@ function preload() {
 function setup() {
   canvas = createCanvas(WIDTH, HEIGHT);
   canvas.parent("#container");
-
-  [gif1, gif2, gif3, gif4].forEach(g => g.parent("#container"));
 
   // Cap vectors
   startCap = createVector(capX, capY);
@@ -108,23 +105,20 @@ function setup() {
   curDrop   = startDrop.copy();
   endDrop2  = curDrop.copy();
 
-  gif1.show(); // Show first instruction
+  gif1Visible = true; // Show first instruction
 }
 
 // ===============================================
 //  DRAW
 // ===============================================
 function draw() {
-  // Update canvas position for GIFs
-  canvasX = canvas.position().x;
-  canvasY = canvas.position().y;
-
-  gif1.position(canvasX + 600, canvasY + 260);
-  gif2.position(canvasX + 178, canvasY + 230);
-  gif3.position(canvasX + 600, canvasY + 210);
-  gif4.position(canvasX + 465, canvasY + 160);
-
   background(bgImg);
+
+  // Draw GIFs on canvas
+  if (gif1Visible) image(gif1, gif1X, gif1Y, 80, 80);
+  if (gif2Visible) image(gif2, gif2X, gif2Y, 80, 80);
+  if (gif3Visible) image(gif3, gif3X, gif3Y, 80, 80);
+  if (gif4Visible) image(gif4, gif4X, gif4Y, 80, 80);
 
   // Draw drops
   drops.forEach(d => { d.update(); d.display(); });
@@ -162,7 +156,9 @@ function draw() {
       dropY = curDrop.y;
       stepCount = 0;
       process3 = 0;
-      gif3.show();
+      gif3Visible = true;
+      gif3X = 600;
+      gif3Y = 210;
     });
   } else if (process3 === 1) {
     move(curDrop, endDrop2, endDrop3, () => { process3 = 2; stepCount = 0; });
@@ -173,7 +169,9 @@ function draw() {
       dropY = curDrop.y;
       stepCount = 0;
       process4 = 0;
-      gif4.show();
+      gif4Visible = true;
+      gif4X = 465;
+      gif4Y = 160;
     });
   } else {
     // Static dropper
@@ -193,7 +191,9 @@ function draw() {
       process1 = 3;
       stepCount = 0;
       process2 = 0;
-      gif2.show();
+      gif2Visible = true;
+      gif2X = 178;
+      gif2Y = 230;
     });
   } else {
     image(capImg, endCap2.x, endCap2.y, capW, capH);
@@ -230,20 +230,20 @@ function move(current, from, to, onDone) {
 // ===============================================
 function mousePressed() {
   // Cap
-  if (mouseX > curCap.x && mouseX < curCap.x + capW &&
-      mouseY > curCap.y && mouseY < curCap.y + capH) {
+  if (mouseX > capX - capW/4 && mouseX < capX + capW &&
+      mouseY > capY - capH/4 && mouseY < capY + capH) {
     capPressed();
   }
 
   // Dropper
-  if (mouseX > curDrop.x && mouseX < curDrop.x + dropW &&
-      mouseY > curDrop.y && mouseY < curDrop.y + dropH) {
+  if (mouseX > dropX - dropW/4 && mouseX < dropX + dropW &&
+      mouseY > dropY - dropH/4 && mouseY < dropY + dropH) {
     dropperPressed();
   }
 
   // Next button
-  if (mouseX > nextX && mouseX < nextX + nextW &&
-      mouseY > nextY && mouseY < nextY + nextH) {
+  if (mouseX > nextX - nextW/4 && mouseX < nextX + nextW &&
+      mouseY > nextY - nextH/4 && mouseY < nextY + nextH) {
     nextPressed();
   }
 }
@@ -252,7 +252,7 @@ function mousePressed() {
 //  CAP CLICK
 // ===============================================
 function capPressed() {
-  gif1.hide();
+  gif1Visible = false;
   if (process1 !== 0) return;
 
   curCap = startCap.copy();
@@ -265,7 +265,7 @@ function capPressed() {
 //  DROPPER CLICK
 // ===============================================
 function dropperPressed() {
-  gif2.hide();
+  gif2Visible = false;
 
   // 1. Move dropper up
   if (process2 === 0) {
@@ -277,7 +277,7 @@ function dropperPressed() {
 
   // 2. Fill dropper (rectangle grows)
   if (process3 === 0) {
-    gif3.hide();
+    gif3Visible = false;
     increase = true;
     showrect = true;
     endDrop3 = createVector(565, 100);
@@ -287,12 +287,10 @@ function dropperPressed() {
 
   // 3. Release drops
   if (process4 === 0) {
-    gif4.hide();
+    gif4Visible = false;
     increase = false;
-    const dropStartX = curDrop.x + 25;
-    const dropStartY = curDrop.y + 58;
     for (let i = 0; i < 4; i++) {
-      drops.push(new Drop(dropStartX, dropStartY + i * 15));
+      drops.push(new Drop(455, 200 + i * 20));
     }
     process5 = 0;
   }
@@ -309,6 +307,6 @@ function showNext() {
 }
 
 function nextPressed() {
-  console.log('nxt');
-  window.location.href = 'Mytitration.html';
+  window.location.href = './Mytitration.html';
 }
+ 

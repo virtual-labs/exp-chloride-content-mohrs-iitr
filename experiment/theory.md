@@ -1,53 +1,33 @@
-<div style="font-family: 'Nunito Sans', sans-serif; font-size: 17px; text-align: justify;">
 
-<h2>Introduction</h2>
+### **Introduction**
 
-<p>
-Apart from hardness-causing ions, water has a lot of other ions mixed in it — for example, chlorides, sulphates, phosphates, nitrates, fluorides, etc. These ions add to the impurity of water. In order to check the purity of water, a range of experiments are carried out, among which this one measures the chloride content.
+Apart from hardness causing ions, water has a lot of other ions mixed in it, for example, chlorides, sulphates, phosphates, nitrates, flurides, ions,etc., which add to the impurity of water. In order to check the purity of water, a range of experiments are carried our, among which hereby we are measuring the chloride content.
+
+Generally water contains chloride ions (Cl<sup>–</sup>) in the form of NaCl, KCl, CaCl<sub>2</sub> and MgCl<sub>2</sub>. The concentration of chloride ion in water >250 ppm, is not desirable for drinpurpose. The total chloride ion can be determined by argentometric method (Mohr’s Method). In this meCl<sup>–</sup> ion solution is directly titrated against AgNO3 using potassium chromate (K<sub>2</sub>CrO<susub>) as an indicator. The reaction involved in the titration is given below:
+
+ <p align="center">
+        AgNO<sub>3</sub> + NaCl → AgCl (white ppt) ↓ + NaNO<sub>3</sub> &nbsp;&nbsp;&nbsp; Eqn. (1)<br><br>
+         2AgNO<sub>3</sub> + K<sub>2</sub>CrO<sub>4</sub> → Ag<sub>2</sub>CrO<sub>4</sub> (Reddish brown ppt) ↓ + 2KNO<sub>3</sub>&nbsp;&nbsp;&nbsp; Eqn. (2)
+  </p>
+
+
+According to the above mentioned reactions, when all the Cl<sup>–</sup> ions are removed as AgCl, at the same point yellow color of chromate ions changes to reddish brown color, and at the end point no further change is observed in color of solution.
+
+<p align='center'>
+  <img src="images/yellow_k2.jpg" alt="Before Titration" width="350" height="500">
+  <br><strong>Fig. 1 Before Titration</strong>
 </p>
 
-<p>
-Generally, water contains chloride ions (Cl<sup>–</sup>) in the form of NaCl, KCl, CaCl<sub>2</sub>, and MgCl<sub>2</sub>. The concentration of chloride ions in water greater than 250 ppm is not desirable for drinking purposes. The total chloride ion concentration can be determined by the argentometric method (Mohr’s Method).
+<p align='center'>
+  <img src="images/brick_red_colour.jpg" alt="After Titration" width="250" height="400">
+  <br><strong>Fig. 2 After Titration — Brick Red Colour</strong>
 </p>
 
-<p>
-In this method, the Cl<sup>–</sup> ion solution is directly titrated against AgNO<sub>3</sub> using potassium chromate (K<sub>2</sub>CrO<sub>4</sub>) as an indicator.  
-The reactions involved in the titration are given below:
-</p>
+### **Applications**
 
-<!-- Equation 1 -->
-<div style="text-align: center; font-family: monospace; font-size: 18px; margin: 10px 0;">
-AgNO<sub>3</sub> + NaCl → AgCl (white ppt) ↓ + NaNO<sub>3</sub>  
-<b>(Eqn. 1)</b>
-</div>
-
-<!-- Equation 2 -->
-<div style="text-align: center; font-family: monospace; font-size: 18px; margin: 10px 0;">
-2AgNO<sub>3</sub> + K<sub>2</sub>CrO<sub>4</sub> → Ag<sub>2</sub>CrO<sub>4</sub> (Reddish brown ppt) ↓ + 2KNO<sub>3</sub>  
-<b>(Eqn. 2)</b>
-</div>
-
-<p>
-According to the above reactions, when all the Cl<sup>–</sup> ions are removed as AgCl, the yellow color of chromate ions changes to a reddish-brown color. At the endpoint, no further change is observed in the color of the solution.
-</p>
-
-<center>
-<img src="images/yellow k2.jpg" alt="Before Titration" height="500" width="350" style="mix-blend-mode: darken; border-radius: 10px; box-shadow: 2px 2px rgb(73, 160, 120); -webkit-filter: contrast(120%);">
-</center>
-<center><b style="font-size:18px;">Fig.1 Before Titration</b></center><br>
-
-<center>
-<img src="images/brick red colour.jpg" alt="After Titration" height="400" width="250" style="mix-blend-mode: darken; border-radius: 10px; box-shadow: 2px 2px rgb(73, 160, 120); -webkit-filter: contrast(120%);">
-</center>
-<center><b style="font-size:18px;">Fig.2 After Titration — Brick red colour</b></center>
-
-<h3><b>Applications:</b></h3>
-<p>
-1. Water Quality Monitoring<br><br>
-2. Environmental Monitoring<br><br>
-3. Industrial Processes<br><br>
-4. Desalination Processes<br><br>
+1. Water Quality Monitoring  
+2. Environmental Monitoring  
+3. Industrial Processes  
+4. Desalination Processes  
 5. Corrosion Control
-</p>
 
-</div>

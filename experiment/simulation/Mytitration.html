@@ -2,25 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chloride content of water by Mohr’s method using external indicator</title>
+  <title>Chloride content titration</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/mainstyle.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/Other.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/mainstyle.css">
-  <link rel="stylesheet" href="css/button.css">
-  <link rel="stylesheet" href="css/slider.css">
-  <link rel="stylesheet" href="css/Other.css">
+
 </head>
 
 <body>
-  <h1 class="heading">Chloride content of water by Mohr’s method using external indicator</h1>
+
+  <H1>Chloride content of water by Mohr’s method using external indicator</H1>
   <div id="flexbox">
 
   </div>
@@ -28,15 +34,35 @@
   <div id="container1">
 
     <div id='textbox' class="rectangle">
-      <span id="displayText">Set the normality of titrant (Silver Nitrate solution) and volume of sample (water solution), then start.</span>
+      <span id="displayText">Set the normality of titrate(Silver Nitrate solution) and volume of titrant(Sample water solution) start button.</span>
       <button class="button1" onclick="changeText()"><i class="fa-solid fa-forward fa-xl"></i></button>
 
     </div>
   </div>
-
+  <style>
+    .help-tooltip {
+    position: absolute;
+    background: #ffffff;
+    padding: 30px 30px;
+    border-radius: 6px;
+    border: 2px solid #70a9a1;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    display: none;
+    top: -180px;         /* Adjust vertical position */
+    left: 50%;          
+    transform: translateX(-50%);
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    white-space: nowrap;
+    z-index: 999;
+    }
+    .button-container {
+      position: relative; /* Needed so tooltip positions correctly */
+    }
+  </style>
   <div class="box">
     <button class="btn btn-primary btn-sm" id="runsetup" onclick="toggleFullScreen()"><i
-      class="fa-solid fa-xl fa-maximize" style="color: #70a9a1;"></i></button>
+      class=" fa-solid fa-xl fa-maximize" style="color: #70a9a1;"></i></button>
       <button class="help-button" onclick="showHelp()"><i class="fa-solid fa-circle-info fa-xl"></i></button>
     <div class="canvasflex">
      
@@ -56,17 +82,23 @@
           <div>
             <button class="button secondary" id="Start">Start</button>
           </div>
+          <div id="helpTooltip" class="help-tooltip">Instructions are available below the page.</div>
+          <div>
+            <button class="button primary" id="resultsBtn" style="display:none;">Show Results</button>
+          </div>
         </div>
         <div class="slider-container">
-          <div class="slider-box"><label for="speed_change">Nozzle Open: <span class="slider-value" id="speed">2</span></label>
+          <div class="slider-box"><label for="speed_change">Nozzle Open: <span class="slider-value" id="speed">2
+                <span></span></label>
             <input type="range" class="slider" id="speed_change" min="1" max="5" value="2" step="1">
           </div>
-          <div class="slider-box"><label for="Normality_titrate">Normality of titrant: <span class="slider-value"
-                id="Normality">0.016 N</span></label>
+          <div class="slider-box"><label for="Normality_titrate">Normality of titrate: <span class="slider-value"
+                id="Normality">0.016 N<span></span></label>
             <input type="range" class="slider" id="Normality_titrate" min=".01" max=".02" value=".016" step=".002">
           </div>
-          <div class="slider-box"><label for="Volume_titrate">Volume of sample: <span class="slider-value"
-                id="Volume">10 ml</span></label>
+          <div class="slider-box"><label for="Volume_titrate">Volume of titrant: <span class="slider-value"
+                id="Volume">10
+                ml<span></span></label>
             <input type="range" class="slider" id="Volume_titrate" min="1" max="15" value="10" step="1">
           </div>
           <div class="result-container">
@@ -94,7 +126,7 @@
   <!-- // Your JavaScript code here...
     // (Add any custom scripts you have in "Mainfile.js" here)-->
   <script>
-    const textArray = ["Set the normality of titrant (Silver Nitrate solution) and volume of sample (water solution), then start.", "Fix the nozzle opening size by nozzle open slider. Shake the flask while Titrating.", "Titrate the solution till it turns to brick-red colour."]; // Add more texts as needed
+    const textArray = ["Set the normality of titrate(Silver Nitrate solution) and volume of titrant(Sample water solution) start button.", "Fix the nozzle opening size by nozzle open slider.Shake the flask while Titrating.", "Titrate the solution till it turn to brick-red colour."]; // Add more texts as needed
     let currentIndex = 0;
     const displayText = document.getElementById("displayText");
       const box = document.getElementById('textbox');
@@ -105,13 +137,11 @@
       currentIndex = (currentIndex + 1) % textArray.length;
       displayText.textContent = textArray[currentIndex];
       if (currentIndex == textArray.length - 1) {
-        box.style.display = 'none';
+        box.style.display = 'block';
       }
     }
     function showHelp() {
       box.style.display = 'block';
-      currentIndex = 0;
-      displayText.textContent = textArray[0];
 
     }
 
@@ -175,12 +205,19 @@
 
   </script>
   <script>
-    const submitButton = document.getElementById("Start");
     const clickMeButton = document.getElementById("Reset");
+    const submitButton = document.getElementById("Start");
+
+    clickMeButton.addEventListener("click", () => {
+      if (!submitButton.classList.contains("pushed")) {
+        // Your click me button action here
+        console.log("Click Me button clicked!");
+      }
+    });
 
     submitButton.addEventListener("click", () => {
       submitButton.classList.toggle("pushed");
-      clickMeButton.disabled = !submitButton.classList.contains("pushed");
+      clickMeButton.disabled = submitButton.classList.contains("pushed");
     });
 
     clickMeButton.addEventListener("click", () => {
@@ -194,6 +231,19 @@
     });
 
   </script>
+  <script>
+    const helpBtn = document.querySelector(".help-button");
+    const helpTooltip = document.getElementById("helpTooltip");     
+
+    helpBtn.addEventListener("mouseenter", () => {
+      helpTooltip.style.display = "block";
+    });
+
+    helpBtn.addEventListener("mouseleave", () => {
+      helpTooltip.style.display = "none";
+    });
+  </script>
+
 
 </body>
 
