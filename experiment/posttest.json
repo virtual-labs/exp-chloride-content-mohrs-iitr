@@ -1,102 +1,102 @@
 [
-  {
-    "question": "What is the role of dilute nitric acid in the experiment, and how does it contribute to the accuracy of results?",
-    "answers": {
-      "a": "Enhances color changes",
-      "b": "Prevents interference from other ions",
-      "c": "Accelerates the titration process",
-      "d": "Neutralizes the sample"
+    {
+      "question": "What is the primary reagent used in Mohr’s method for chloride determination?",
+      "answers": {
+        "a": "Potassium permanganate",
+        "b": "Silver nitrate",
+        "c": "Sodium hydroxide",
+        "d": "Barium chloride"
+      },
+      "correctAnswer": "b"
     },
-    "correctAnswer": "b"
-  },
-  {
-    "question": "Describe the visual indication of the endpoint in Mohr’s method. How does it aid in determining the completion of the titration?",
-    "answers": {
-      "a": "Color change to green",
-      "b": "Formation of a red-brown precipitate",
-      "c": "When the solution becomes colorless",
-      "d": "No visual indication"
+    {
+      "question": "Which of the following is used as an external indicator in Mohr’s method?",
+      "answers": {
+        "a": "Methyl orange",
+        "b": "Phenolphthalein",
+        "c": "Potassium chromate",
+        "d": "Congo red"
+      },
+      "correctAnswer": "c"
     },
-    "correctAnswer": "b"
-  },
-  {
-    "question": "Explain the potential sources of error in the titration process and suggest measures to overcome them?",
-    "answers": {
-      "a": "Over-titration",
-      "b": "Endpoint ambiguity",
-      "c": "Precipitate formation issues",
-      "d": "All of the above"
+    {
+      "question": "What is the color change observed at the end point of Mohr’s titration?",
+      "answers": {
+        "a": "Colorless to pink",
+        "b": "Yellow to red-brown precipitate",
+        "c": "Blue to green",
+        "d": "Colorless to blue"
+      },
+      "correctAnswer": "b"
     },
-    "correctAnswer": "d"
-  },
-  {
-    "question": "In what scenarios might Mohr’s method not be the most suitable for chloride determination, and what alternative methods could be considered?",
-    "answers": {
-      "a": "High chloride concentrations",
-      "b": "Low sensitivity",
-      "c": "Interference from other ions",
-      "d": "All of the above"
+    {
+      "question": "In Mohr’s method, the formation of which precipitate indicates the end point?",
+      "answers": {
+        "a": "AgCl",
+        "b": "Ag₂CrO₄",
+        "c": "AgOH",
+        "d": "Ag₂SO₄"
+      },
+      "correctAnswer": "b"
     },
-    "correctAnswer": "d"
-  },
-  {
-    "question": "How does the presence of sodium chloride in diets contribute to the higher chloride concentration in wastewater?",
-    "answers": {
-      "a": "Enhances water color",
-      "b": "Passes unchanged through the digestive system",
-      "c": "Accelerates the titration process",
-      "d": "Creates a colorless solution"
+    {
+      "question": "What is the role of potassium chromate in Mohr’s method?",
+      "answers": {
+        "a": "It reacts with chloride ions",
+        "b": "It forms a colored precipitate with silver ions",
+        "c": "It acts as a buffer",
+        "d": "It removes turbidity"
+      },
+      "correctAnswer": "b"
     },
-    "correctAnswer": "b"
-  },
-  {
-    "question": "Explain the role of potassium chromate as an indicator in Mohr’s method?",
-    "answers": {
-      "a": "Enhances color changes",
-      "b": "Neutralizes the sample",
-      "c": "Precipitates chloride ions",
-      "d": "Indicates the endpoint"
+    {
+      "question": "Mohr’s method is suitable for water samples with which pH range?",
+      "answers": {
+        "a": "Strongly acidic (<3)",
+        "b": "Neutral to slightly alkaline (6–10)",
+        "c": "Strongly alkaline (>12)",
+        "d": "Any pH"
+      },
+      "correctAnswer": "b"
     },
-    "correctAnswer": "d"
-  },
-  {
-    "question": "Discuss the potential harm that chloride concentrations can cause to metallic pipes and structures?",
-    "answers": {
-      "a": "Enhances structural integrity",
-      "b": "Accelerates aging",
-      "c": "Causes corrosion",
-      "d": "Improves conductivity"
+    {
+      "question": "What happens if the titration is performed in strongly acidic water?",
+      "answers": {
+        "a": "AgCl precipitate dissolves",
+        "b": "Indicator changes color too late",
+        "c": "No reaction occurs",
+        "d": "Red-brown precipitate forms immediately"
+      },
+      "correctAnswer": "a"
     },
-    "correctAnswer": "c"
-  },
-  {
-    "question": "How does chloride content affect the corrosion of metallic pipes, and what preventive measures can be taken?",
-    "answers": {
-      "a": "Increases corrosion, use corrosion-resistant materials",
-      "b": "Decreases corrosion, increase chloride concentration",
-      "c": "No impact on corrosion",
-      "d": "Install pipes without any preventive measures"
+    {
+      "question": "During the titration, if too much silver nitrate is added, what is observed?",
+      "answers": {
+        "a": "Brick-red precipitate disappears",
+        "b": "The solution becomes turbid",
+        "c": "End point is overshot",
+        "d": "Chloride content is underestimated"
+      },
+      "correctAnswer": "c"
     },
-    "correctAnswer": "a"
-  },
-  {
-    "question": "What is the typical taste perception in waters containing 250 mg/L Cl- if sodium cation is present?",
-    "answers": {
-      "a": "Detectable salty taste",
-      "b": "Bitter taste",
-      "c": "No taste",
-      "d": "Sweet taste"
+    {
+      "question": "Which ion in water interferes most with Mohr’s method?",
+      "answers": {
+        "a": "Calcium",
+        "b": "Bromide",
+        "c": "Nitrate",
+        "d": "Sodium"
+      },
+      "correctAnswer": "b"
     },
-    "correctAnswer": "a"
-  },
-  {
-    "question": "Discuss the potential environmental impacts of elevated chloride concentrations along the sea coast and in industrial settings?",
-    "answers": {
-      "a": "Impact on aquatic life",
-      "b": "Improved water quality",
-      "c": "No environmental effects",
-      "d": "Decreased industrial production"
-    },
-    "correctAnswer": "a"
-  }
-]
+    {
+      "question": "A 25 mL water sample requires 15 mL of 0.01 M AgNO₃ to reach the end point. The chloride content in mg/L is approximately:",
+      "answers": {
+        "a": "53.3 mg/L",
+        "b": "106.6 mg/L",
+        "c": "200 mg/L",
+        "d": "213 mg/L"
+      },
+      "correctAnswer": "d"
+    }
+  ]
