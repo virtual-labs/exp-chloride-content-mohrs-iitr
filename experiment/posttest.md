@@ -1,72 +1,81 @@
 #### Please attempt the following questions
 
 <br>
- What is the role of dilute nitric acid in the experiment, and how does it contribute to the accuracy of results?<br>
-a. Enhances color changes<br>
-b. Prevents interference from other ions<br>
-c. Accelerates the titration process<br>
-d. Neutralizes the sample<br>
+Q1. What is the primary reagent used in Mohr’s method for chloride determination<br>
+
+a. Potassium permanganate  <br>
+b. Silver nitrate  <br>
+c. Sodium hydroxide  <br>
+d. Barium chloride  <br>
 <br>
 
- Describe the visual indication of the endpoint in Mohr’s method. How does it aid in determining the completion of the titration?<br>
-a. Color change to green<br>
-b. Formation of a red-brown precipitate<br>
-c. When the solution becomes colorless<br>
-d. No visual indication<br>
+Q2. Which of the following is used as an external indicator in Mohr’s method?<br>
+
+a. Methyl orange  <br>
+b. Phenolphthalein  <br>
+c. Potassium chromate  <br>
+d. Congo red<br>
 <br>
 
- Explain the potential sources of error in the titration process and suggest measures to overcome them?<br>
-a. Over-titration<br>
-b. Endpoint ambiguity<br>
-c. Precipitate formation issues<br>
-d. All of the above<br>
+Q3. What is the color change observed at the end point of Mohr’s titration?<br>
+
+a. Colorless to pink  <br>
+b. Yellow to red-brown precipitate  <br>
+c. Blue to green  <br>
+d. Colorless to blue <br> 
 <br>
 
- In what scenarios might Mohr’s method not be the most suitable for chloride determination, and what alternative methods could be considered?<br>
-a. High chloride concentrations<br>
-b. Low sensitivity<br>
-c. Interference from other ions<br>
-d. All of the above<br>
+Q4. In Mohr’s method, the formation of which precipitate indicates the end point?<br>
+
+a. AgCl  <br>
+b. Ag₂CrO₄  <br>
+c. AgOH  <br>
+d. Ag₂SO₄  <br>
 <br>
 
- How does the presence of sodium chloride in diets contribute to the higher chloride concentration in wastewater?<br>
-a. Enhances water color<br>
-b. Passes unchanged through the digestive system<br>
-c. Accelerates the titration process<br>
-d. Creates a colorless solution<br>
+Q5. What is the role of potassium chromate in Mohr’s method?<br>
+
+a. It reacts with chloride ionsn  <br>
+b. It forms a colored precipitate with silver ions  <br>
+c. It acts as a buffer  <br>
+d. It removes turbidity  <br>
 <br>
 
- Explain the role of potassium chromate as an indicator in Mohr’s method?<br>
-a. Enhances color changes<br>
-b. Neutralizes the sample<br>
-c. Precipitates chloride ions<br>
-d. Indicates the endpoint<br>
+Q6. Mohr’s method is suitable for water samples with which pH range?<br>
+
+a. Strongly acidic (<3)  <br>
+b. Neutral to slightly alkaline (6–10)  <br>
+c. Strongly alkaline (>12)  <br>
+d. Any pH  <br>
 <br>
 
- Discuss the potential harm that chloride concentrations can cause to metallic pipes and structures?<br>
-a. Enhances structural integrity<br>
-b. Accelerates aging<br>
-c. Causes corrosion<br>
-d. Improves conductivity<br>
+Q7. What happens if the titration is performed in strongly acidic water?<br>
+
+a. AgCl precipitate dissolves  <br>
+b. Indicator changes color too late  <br>
+c. No reaction occurs <br>
+d. Red-brown precipitate forms immediately  <br>
 <br>
 
- How does chloride content affect the corrosion of metallic pipes, and what preventive measures can be taken?<br>
-a. Increases corrosion, use corrosion-resistant materials<br>
-b. Decreases corrosion, increase chloride concentration<br>
-c. No impact on corrosion<br>
-d. Install pipes without any preventive measures<br>
+Q8. During the titration, if too much silver nitrate is added, what is observed?<br>
+
+a. Brick-red precipitate disappears  <br>
+b. The solution becomes turbid <br> 
+c. End point is overshot  <br>
+d. Chloride content is underestimated  <br>
 <br>
 
- What is the typical taste perception in waters containing 250 mg/L Cl- if sodium cation is present?<br>
-a. Detectable salty taste<br>
-b. Bitter taste<br>
-c. No taste<br>
-d. Sweet taste<br>
+Q9. Which ion in water interferes most with Mohr’s method?<br>
+
+a. Calcium  <br>
+b. Bromide  <br>
+c. Nitrate <br>
+d. Sodium  <br>
 <br>
 
- Discuss the potential environmental impacts of elevated chloride concentrations along the sea coast and in industrial settings?<br>
-a. Impact on aquatic life<br>
-b. Improved water quality<br>
-c. No environmental effects<br>
-d. Decreased industrial production<br>
-<br>
+Q10. A 25 mL water sample requires 15 mL of 0.01 M AgNO₃ to reach the end point. The chloride content in mg/L is approximately:<br>
+
+a. 53.3 mg/L  <br>
+b. 106.6 mg/L  <br>
+c. 200 mg/L  <br>
+d. 213 mg/L <br>

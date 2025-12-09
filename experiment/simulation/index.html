@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +15,18 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
   </style>
+
 </head>
+
 <body>
   <h1 class="heading">Chloride content of water by Mohr’s method using external indicator</h1>
+
   <div id="thumbnail-container" class="box">
     <button class="btn btn-primary btn-sm" id="runsetup" onclick="toggleFullScreen()"><i
         class=" fa-solid fa-xl fa-maximize" style="color: #9ec1a3;"></i></button>
     <div id="video-container">
       <video id="video" width="800" height="600">
+
         <source src="videos/introVideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -31,11 +36,16 @@
     <img src="images/Forward.png" alt="Forward" id="next-button" onclick="nextVideo()">
     <!-- <button id="custom-button" onclick="customFunction()">Custom Function</button> -->
     <button id="skipB" class='mybutton' onclick="skip()"
-      style="display: block; padding: 1px 2px 1px 2px; font-size: 10px; margin-top: 1px;margin-left: 740px;">Skip <span
-        style="font-weight:bold">&#187;</span></button>
+      style="display: block; padding: 1px 2px 1px 2px; font-size: 10 px; margin-top: 1px;margin-left: 740px;">Skip <span
+        font-weight:bold>&#187;</span></button>
   </div>
   <h1 class="end"></h1>
+
+
+
+
   <script>
+
     var videos = ["videos/introVideo.mp4", "videos/nextVideo.mp4"]; // Add your video sources here
     var currentVideoIndex = 0;
     var video = document.getElementById('video');
@@ -43,8 +53,11 @@
     var startButton = document.getElementById('play-button');
     var nextButton = document.getElementById('next-button');
     var thumbnail = document.getElementById('Thumbnail');
+
     video.addEventListener('ended', () => {
+      video.play();
       nextButton.style.display = 'block';
+     customButton.style.display = 'block';
     });
     function startVideo() {
       console.log('hi');
@@ -54,6 +67,7 @@
       startButton.style.display = 'none';
       thumbnail.style.display = 'none';
     }
+
     function nextVideo() {
       if (currentVideoIndex == 0) {
         currentVideoIndex = (currentVideoIndex + 1) % videos.length;
@@ -67,10 +81,12 @@
     }
     setTimeout(() => {
       const skipB = document.getElementById('skipB');
+
       // 👇️ removes element from DOM
       skipB.style.display = 'block';
+
       // 👇️ hides element (still takes up space on page)
-      thumbnail.style.visibility = 'hidden';
+       box.style.visibility = 'hidden';
     }, 3000);
     function skip() {
       window.location.href = 'StartHtml.html';
@@ -100,6 +116,9 @@
         // toggleDiv.classList.remove('custom-fullscreen');
       }
     }
+
   </script>
+
 </body>
+
 </html>

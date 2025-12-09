@@ -1,1 +1,1 @@
-#### To Determination of Chloride content of water by Mohr’s method using external indicator.
+#### To determine the chloride content of water by Mohr’s method using an external indicator.

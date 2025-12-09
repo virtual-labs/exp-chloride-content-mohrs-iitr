@@ -80,7 +80,7 @@ body {
 }
 .help-button {
     position: absolute;
-    top: 2px; /* Adjust top position as needed */
+    top: 5px; /* Adjust top position as needed */
     right: 60px; /* Adjust right position as needed */
     background-color: #e3efda;
     color: #70a9a1;
@@ -106,6 +106,7 @@ body {
     text-align: center;
     border-radius: 5px;
     z-index: 1000;
+    
   }
 
   .rectangle button {
