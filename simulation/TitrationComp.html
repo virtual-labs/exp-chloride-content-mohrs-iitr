@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titration Finished</title>
+    <link rel="stylesheet" href="css/Other.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 16px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        .calculations {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .mybutton {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align:center;">
+        <h1>Your Titration is Finished</h1>
+    </div>
+    <h2>Determination of Chloride Content</h2>
+    <h3>Observation Table</h3>
+
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Volume of Sample (V<sub>2</sub>)</th>
+                <th>Volume of Titrant Consumed (V<sub>1</sub>)</th>
+                <th>Normality of Titrant (N<sub>2</sub>)</th>
+                <th>Normality of Sample (N<sub>1</sub> = N<sub>2</sub>V<sub>1</sub>/V<sub>2</sub>)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="v2cell">-- ml</td>
+                <td id="v1cell">-- ml</td>
+                <td id="n2cell">-- N</td>
+                <td id="n1cell">-- N</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="calculations">
+        <h3>Calculations</h3>
+        <div id="calcArea">
+            Chloride content = (N<sub>1</sub> × 35.5) g/L<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;= <span id="chloride_g_l">--</span> g/L<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;= <span id="chloride_mg_l">--</span> mg/L<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;= <span id="chloride_ppm">--</span> ppm<br><br>
+        </div>
+        <div>
+            <a id="detailedLink" href="images/calc.png">For Detailed Calculation</a><br><br>
+            <a href="StartHtml.html"><button class="mybutton">Replay <span style="font-weight:bolder; font-size:18px">&#8634;</span></button></a>
+        </div>
+    </div>
+
+    <script>
+        // Read values stored by the simulation
+        const v1_raw = localStorage.getItem('volume_titrant');
+        const v2_raw = localStorage.getItem('volume_titrate');
+        const n2_raw = localStorage.getItem('normality_titrate');
+        const n1_raw = localStorage.getItem('normality_titrant');
+
+        function toNumber(value) {
+            const n = Number(value);
+            return isNaN(n) ? null : n;
+        }
+
+        const v1 = toNumber(v1_raw);
+        const v2 = toNumber(v2_raw);
+        const n2 = toNumber(n2_raw);
+        const n1 = toNumber(n1_raw);
+
+        if (v1 === null || v2 === null || n2 === null || n1 === null) {
+            document.getElementById('resultsTable').innerHTML = '<tr><td colspan="4">No simulation data found. Please run the simulation first.</td></tr>';
+            document.getElementById('calcArea').innerText = '';
+        } else {
+            document.getElementById('v2cell').innerText = `${v2.toFixed(2)} ml`;
+            document.getElementById('v1cell').innerText = `${v1.toFixed(2)} ml`;
+            document.getElementById('n2cell').innerText = `${n2.toFixed(3)} N`;
+            document.getElementById('n1cell').innerText = `${n1.toFixed(3)} N`;
+
+            // Calculations
+            const chloride_g_l = n1 * 35.5;
+            const chloride_mg_l = chloride_g_l * 1000;
+            const chloride_ppm = chloride_mg_l; // ppm = mg/L
+
+            document.getElementById('chloride_g_l').innerText = chloride_g_l.toFixed(2);
+            document.getElementById('chloride_mg_l').innerText = chloride_mg_l.toFixed(2);
+            document.getElementById('chloride_ppm').innerText = chloride_ppm.toFixed(2);
+        }
+    </script>
+</body>
+</html>

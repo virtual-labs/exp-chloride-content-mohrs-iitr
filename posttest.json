@@ -1,0 +1,102 @@
+[
+    {
+      "question": "What is the primary reagent used in Mohr’s method for chloride determination?",
+      "answers": {
+        "a": "Potassium permanganate",
+        "b": "Silver nitrate",
+        "c": "Sodium hydroxide",
+        "d": "Barium chloride"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "Which of the following is used as an external indicator in Mohr’s method?",
+      "answers": {
+        "a": "Methyl orange",
+        "b": "Phenolphthalein",
+        "c": "Potassium chromate",
+        "d": "Congo red"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "What is the color change observed at the end point of Mohr’s titration?",
+      "answers": {
+        "a": "Colorless to pink",
+        "b": "Yellow to red-brown precipitate",
+        "c": "Blue to green",
+        "d": "Colorless to blue"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "In Mohr’s method, the formation of which precipitate indicates the end point?",
+      "answers": {
+        "a": "AgCl",
+        "b": "Ag₂CrO₄",
+        "c": "AgOH",
+        "d": "Ag₂SO₄"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "What is the role of potassium chromate in Mohr’s method?",
+      "answers": {
+        "a": "It reacts with chloride ions",
+        "b": "It forms a colored precipitate with silver ions",
+        "c": "It acts as a buffer",
+        "d": "It removes turbidity"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "Mohr’s method is suitable for water samples with which pH range?",
+      "answers": {
+        "a": "Strongly acidic (<3)",
+        "b": "Neutral to slightly alkaline (6–10)",
+        "c": "Strongly alkaline (>12)",
+        "d": "Any pH"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "What happens if the titration is performed in strongly acidic water?",
+      "answers": {
+        "a": "AgCl precipitate dissolves",
+        "b": "Indicator changes color too late",
+        "c": "No reaction occurs",
+        "d": "Red-brown precipitate forms immediately"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "question": "During the titration, if too much silver nitrate is added, what is observed?",
+      "answers": {
+        "a": "Brick-red precipitate disappears",
+        "b": "The solution becomes turbid",
+        "c": "End point is overshot",
+        "d": "Chloride content is underestimated"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "Which ion in water interferes most with Mohr’s method?",
+      "answers": {
+        "a": "Calcium",
+        "b": "Bromide",
+        "c": "Nitrate",
+        "d": "Sodium"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "A 25 mL water sample requires 15 mL of 0.01 M AgNO₃ to reach the end point. The chloride content in mg/L is approximately:",
+      "answers": {
+        "a": "53.3 mg/L",
+        "b": "106.6 mg/L",
+        "c": "200 mg/L",
+        "d": "213 mg/L"
+      },
+      "correctAnswer": "d"
+    }
+  ]

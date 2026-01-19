@@ -1,0 +1,112 @@
+[
+            {
+              "question": "What is the primary goal of using Mohr’s method in this experiment?",
+              "answers": {
+                "a": "Measure sodium concentration", 
+                "b": "Determine chloride content", 
+                "c": "Assess water color", 
+                "d": "Analyse pH levels"
+              },
+              "correctAnswer": "b"
+            },
+
+            {
+              "question": "Why is chloride concentration generally higher in wastewater compared to raw water?",
+              "answers": {
+                "a": "Due to the presence of sodium chloride in diets", 
+                "b": "Industrial processes", 
+                "c": "Seawater leakage", 
+                "d": "All of the above"
+              },
+              "correctAnswer": "a"
+            },
+
+            {
+              "question": "What is the role of dilute nitric acid in the experiment?",
+              "answers": {
+                "a": "Increase sample acidity", 
+                "b": "Enhance color changes", 
+                "c": "Neutralize the sample", 
+                "d": "Accelerate the titration process"
+              },
+              "correctAnswer": "a"
+            },
+
+            {
+              "question": "Which solution is commonly used as an indicator in Mohr’s method?",
+              "answers": {
+                "a": "Sodium hydroxide", 
+                "b": "Silver nitrate", 
+                "c": "Potassium permanganate", 
+                "d": "Potassium chromate"
+              },
+              "correctAnswer": "d"
+            },
+
+            {
+              "question": "What does the formation of a red-brown precipitate indicate in Mohr's method?",
+              "answers": {
+                "a": "Endpoint of the titration", 
+                "b": "Sample contamination", 
+                "c": "Acidic conditions", 
+                "d": "None of the above"
+              },
+              "correctAnswer": "a"
+            },
+
+            {
+              "question": "In potable water, what influences the perception of a salty taste due to chloride concentration?",
+              "answers": {
+                "a": "Weather conditions", 
+                "b": "Sodium cation presence", 
+                "c": "Chloride levels below 100 mg/L", 
+                "d": "Calcium and magnesium predominance"
+              },
+              "correctAnswer": "b"
+            },
+
+            {
+              "question": "Why might chloride concentrations harm metallic pipes and structures?",
+              "answers": {
+                "a": "Enhance structural integrity", 
+                "b": "Cause corrosion", 
+                "c": "Accelerate aging", 
+                "d": "Improve conductivity"
+              },
+              "correctAnswer": "b"
+            },
+
+            {
+              "question": "What is the primary source of chloride in wastewater from human consumption?",
+              "answers": {
+                "a": "Drinking water", 
+                "b": "Sodium chloride in diets", 
+                "c": "Atmospheric deposition", 
+                "d": "Industrial discharge"
+              },
+              "correctAnswer": "b"
+            },
+
+            {
+              "question": "Which method is used to determine chloride content in this experiment?",
+              "answers": {
+                "a": "Gravimetric analysis", 
+                "b": "Mohr’s method", 
+                "c": "Spectrophotometry", 
+                "d": "Gas chromatography"
+              },
+              "correctAnswer": "b"
+            },
+
+            {
+
+              "question": "How can the chloride concentration in brackish water be described?",
+              "answers": {
+                "a": "High", 
+                "b": "Low", 
+                "c": "Variable", 
+                "d": "Constant"
+              },
+              "correctAnswer": "c"
+            }
+]
