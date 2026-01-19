@@ -19,6 +19,8 @@ body {
 }
 #thumbnail-container {
     position: relative;
+    
+    /* object-fit: cover; */
 }
 
 #video-container {
@@ -26,7 +28,7 @@ body {
     position: relative;
     top: auto;
     left: auto;
-
+    /* object-fit: cover; */
 
     /* //transform: translate(-50%, -50%); */
 }
@@ -68,6 +70,7 @@ body {
     box-shadow: 2px 2px #40798c;
     margin: 23px;
     overflow: hidden; 
+    
   }
   .box::before {
     content: "Chloride content of water by Mohr’s method using external indicator";
@@ -154,3 +157,6 @@ body {
     color: #cfe0c3 !important;
     transform: scale(1.1);
 }
+/* #video{
+    object-fit: fill;
+} */
