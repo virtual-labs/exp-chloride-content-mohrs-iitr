@@ -6,6 +6,14 @@ Follow these steps to determine the concentration of chloride ions in a sample:
 4.Titrate the reaction mixture against N/100 AgNO<sub>3</sub> solution; during titration the color of the solution changes from yellow to reddish brown. Continue the titration until no further change in color is observed in the color of reaction mixture, this volume is measured as the end point.  
 5.The titration is repeated for concordant values.  
 
+#### **Slide-1 Procedure**
+1.Add few drops of potassium Chromate indicator into sample water.<br/>
+2.The colour changes to yellow.
+
+#### **Slide-2 Procedure**
+1.Set the normality of titrate(Silver Nitrate solution) and volume of titrant(Sample water solution) start button.<br/>
+2.Fix the nozzle opening size by nozzle open slider.Shake the flask while Titrating.<br/>
+3.Titrate the solution till it turn to brick-red colour.
 
 #### **Safety Precautions**
 
